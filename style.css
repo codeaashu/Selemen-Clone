@@ -1,0 +1,862 @@
+@font-face {
+    font-family: aty ;
+    src: url(./AtypDisplay-Regular\ \(1\).ttf);
+}
+/* ===( CODE AASHU )=== */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: gilroy;
+}
+html, body{
+width: 100%;
+ height: 100%;
+ background-color: #151519;
+}
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #151519;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+#heading #head{
+    width: 80vw;
+}
+#page1 >img{
+    position: absolute;
+}
+#ig1{
+    width: 22%;
+    right: 24%;
+    bottom: 15%;
+    z-index: 99;
+}
+#ig2{
+    z-index: 0;
+    width: 22%;
+    left: 21%;
+    bottom: 29%;
+    z-index: 4;
+}
+#ig3{
+    top: 7%;
+    width: 15%;
+    left: 34%;
+}
+#ig4{
+    width: 23%;
+    top: 12%;
+    left: 52%;
+    z-index: 3;
+}
+#ig5{
+    width: 25%;
+    bottom:10%;
+    z-index: 3;
+}
+#ig6{
+    width: 17%;
+    right: 28%;
+    z-index: 2;
+}
+#ig7{
+    width: 17%;
+    bottom: 21%;
+    z-index: 1;
+}
+#page1 h4{
+    position: absolute;
+    bottom:5%;
+    color: #ffffffae;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#page2{
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#page2 #down{
+    position: absolute;
+    top: -30%;
+    width: 100%;
+    height: 45vh;
+    padding: 15px 40px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+#down h4{
+    font-weight: 300;
+    font-size: 17px;
+    color: #A9ABB5;
+}
+#down #line1{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 80px);
+    height: 1px;
+    background-color: #ffffff4f;
+}
+#down #line2{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 90%;
+    background-color: #ffffff4f;
+}
+#page2 h2{
+    font-size: 50px;
+    color: #A9ABB5;
+    font-weight: 500;
+    line-height: 1;
+}
+#page2 h1{
+    font-size: 130px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: -5px;
+    margin-bottom: 50px;
+    z-index: 3;
+}
+#page2 img{
+    position: absolute;
+    bottom: 7%;
+    height:37%;
+}
+#page2 #line{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    height:42%;
+    width: 1px;
+    background-color: #ffffff4f;
+}
+#page3{
+    position: relative;
+    width: 100%;
+    height: 170vh;
+    display: flex;
+    align-items: center;
+}
+.line3{
+    width: calc(100% - 80px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #ffffff4f;
+}
+#l1{
+    top: 0;
+}
+#l2{
+    bottom: 0;
+}
+#line3-vt{
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height:100%;
+    background-color: #ffffff4f;
+}
+#page3 #left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 0;
+}
+#page3 #right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 0;
+}
+#page3 h3{
+    font-weight: 500;
+    color: #A9ABB5;
+}
+#page3 h4{
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #A9ABB5;
+}
+#page3 .over{
+    width: 100%;
+    height: 120vh;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page3 #left .over{
+    padding-right: 60px;
+}
+#page3 #right .over{
+    padding-left: 60px;
+}
+#page3 .igs{
+    width: 65%;
+    height: 75%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page3 .igs h5{
+    font-size: 1vw;
+    color: #fff;
+    font-weight: 500;
+    font-family: aty ;
+    transition: all ease 0.5s;
+    opacity: .7;
+
+}
+#page3 .igs h2{
+    font-size: 2vw;
+    color: #fff;
+    font-weight: 600;
+    font-family: aty ;
+    transition: all ease 0.5s;
+    opacity: .7;
+
+
+}
+#page3 #left .igs{
+    background-image: url(https://selemen.liqium.com/img/j2.jpg);
+}
+#page3 #right .igs{
+    background-image: url(https://selemen.liqium.com/img/j3.jpg);
+}
+#page3 .over:hover .igs{
+width: 100%;
+height: 100%;
+}
+#page3 .over:hover .igs h2,#page3 .over:hover .igs h5{
+    margin-top: 10px;
+    scale: 2;
+    opacity: 1;
+}
+#page4{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+#page4 div{
+    width: 45%;
+    margin-top: 160px;
+}
+#page4 div img{
+    transform-origin: left;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.pt{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position:  center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+.pt h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight:400;
+}
+.pt p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+}
+#pt1{
+    background-image: url(https://selemen.liqium.com/img/b1.jpg);
+    z-index: 1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 0%);
+}
+#pt2{
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    background-image: url(https://selemen.liqium.com/img/b2.jpg);
+    z-index: 2;
+}
+#pt3{
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    background-image: url(https://selemen.liqium.com/img/b3.jpg);
+    z-index: 3;
+}
+#page6{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#elem1{
+    position: relative;
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+#elem1 h4{
+    color: #ffffff79;
+    font-size: 16px;
+    font-weight: 400;
+}
+#line6{
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff4f;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+#line6-vt{
+    height: 100%;
+    width: 1px;
+    background-color: #ffffff4f;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+#elem2{
+    position: relative;
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#elem2 button{
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #35363D;
+    color: #ffffff79;
+    font-size: 12px;
+    font-weight: 500;
+}
+#line6-h{
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff34;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+#elem3{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+#elem3 h4{
+    font-size: 50px;
+    font-weight: 400;
+    color: #ffffff;
+}
+#para{
+    width: 35%;
+    overflow: hidden;
+    margin-top: 120px;
+}
+#para p{
+    font-size: 20px;
+    color: #A9ABB5;
+}
+#linee{
+    position: absolute;
+    left: 30%;
+    width: 50%;
+    bottom: 0;
+    height: 1px;
+    background-color: #ffffff34;
+}
+#page7{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#slide7{
+    white-space: nowrap;
+}
+#slide7 h1{
+    font-size: 18vw;
+    color: #494A4F;
+    font-weight:400;
+    display: inline-block;
+    margin-right: 20px;
+    animation-name: slide7;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#slide7 h1 sup{
+    font-size: 5vw;
+    font-weight: 800;
+}
+@keyframes slide7 {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 24px));
+    }
+}
+#page8{
+    height: 110vh;
+    width: 100%;
+}
+#page8 img{
+    height: 100%;
+    width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+#page9{
+    position: relative;
+    padding: 20px;
+    padding-top: 200px;
+    background-color: #151519;
+    padding-bottom: 300px;
+    overflow: hidden;
+}
+#page9 h1{
+    font-size:8vw;
+    line-height: 1;
+    color: #fff;
+    font-weight: 500;
+    font-family: aty;
+    letter-spacing: -3px;
+}
+#page9 .over{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    background-color: rgba(21, 21, 25, 0.511);
+}
+
+#page9 div{
+    position: relative;
+    display: flex;
+    align-items:start;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+#page9 #ig91{
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 20%;
+    z-index: 99;
+    mix-blend-mode: difference;
+
+}
+#page9 #ig92{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 30%;
+    z-index: 99;
+}
+#page9 #ig93{
+    position: absolute;
+    bottom: -11%;
+    left: 0;
+    width: 20%;
+}
+#page10{
+    height: 55vh;
+    width: 100%;
+    background-color: #151519;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#page10 h4{
+    color: #ffffffcd;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+#about{
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    height: 95%;
+}
+#li1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff5f;
+
+}
+#li2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ffffff5f;
+
+}
+#page11{
+    position: relative;
+    height: 110vw;
+    width: 100%;
+    background-image: url(https://selemen.liqium.com/img/bg1.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#page11 h4{
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+}
+#page11 h2{
+    color: #fff;
+
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+#page11 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#ii1{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    height: 50%;
+    width: 18%;
+    background-image: url(https://selemen.liqium.com/img/j4.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    padding: 60px 30px;
+    align-items: flex-start;
+    justify-content: end;
+    flex-direction: column;
+    text-align: left;
+}
+#ii2{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    height: 50%;
+    width: 40%;
+    background-image: url(https://selemen.liqium.com/img/j5.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    padding: 60px 30px;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+#ii3{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 50%;
+    width: 27%;
+    background-image: url(https://selemen.liqium.com/img/j6.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    padding: 60px 30px;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+#page11 h1,#page12 h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 150px;
+}
+#page11 p,#page12 p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 28px;
+}
+#page12{
+    height: 70vh;
+    width: 100%;
+    background-color: #151519;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+#page13{
+    height: 100vh;
+    width: 100%;
+    background-color: #151519;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page13 .elems{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page13 .elems:nth-child(2){
+    width: 35%;
+    background-image: url(https://selemen.liqium.com/img/mv5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#page13 .s1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#page13 .s2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.s1 .im1{
+    width: 100%;
+    height: 50%;
+}
+.s1 .im2{
+    width: 100%;
+    height: 40%;
+}
+.s2 .im3{
+    width: 100%;
+    height: 60%;
+}
+.s2 .im4{
+    width: 100%;
+    height: 30%;
+}
+.s2 .im5{
+    width: 100%;
+    height: 50%;
+}
+.s2 .im6{
+    width: 100%;
+    height: 45%;
+}
+#page14{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    color: #fff;
+    padding: 40px;
+}
+#page14 h1{
+    width: 48%;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 1;
+    margin-bottom: 150px;
+}
+#line14{
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff5f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#line14-v{
+    width: 1px;
+    height: 50%;
+    background-color: #ffffff5f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#page15{
+    height: 120vh;
+    width: 100%;
+}
+#page15 .elem{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+#page15 .elem:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 10%;
+}
+#page15 .elem:nth-child(2){
+    padding: 60px 40px 0;
+}
+#page15 .elem:nth-child(2) .info{
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(transparent 30%,rgba(143, 142, 142, 0.168));
+    margin-top: 75px;
+    border-bottom: 1px solid #ffffff5f;
+    display: flex;
+    align-items: end;
+    gap: 550px;
+    padding: 22px;
+}
+#page15 .info h2{
+    font-weight: 300;
+    color: #ffffffaa;
+}
+#footer{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+#footer #bottom{
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #ffffff5f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer #bottom h2{
+    font-weight: 300;
+    color: #ffffff81;
+}
+#footer #bottom h2 span{
+    color: #ffffffde;
+}
+#foot{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    
+}
+#foot h1{
+    font-size: 25vw;
+    font-weight: 500;
+    font-family: aty;
+    color: #ffffff20;
+    letter-spacing: -10px;
+    line-height: 1;
+
+}
+#fl{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: #ffffff5f;
+}
+#footer h3{
+    font-weight: 300;
+    color: #ffffff5d;
+    margin-bottom: 150px;
+    font-size: 23px;
+}
+span{
+    display: inline-block;
+}
